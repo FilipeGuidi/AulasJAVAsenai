@@ -1,24 +1,35 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class PrimeiraAula {
     public static void main(String[] args) {
-        String nome = "Filipe";
-        int idade = 22;
-        boolean professor = false;
+        Scanner scanner = new Scanner(System.in);
 
-        int anoNascimento = 2026 - idade;
+        System.out.println("Qual o seu nome?");
+        String nome = scanner.nextLine();
 
-        System.out.println(nome);
-        System.out.println(idade);
-        System.out.println(professor);
-        System.out.println(anoNascimento);
+        System.out.println("Qual a sua idade?");
+        int idade = scanner.nextInt();
+        scanner.nextLine();
 
-        Scanner entrada = new Scanner(System.in);
+        System.out.println("Qual a sua altura?");
+        double altura = scanner.nextDouble();
+        scanner.nextLine();
 
-        nome = entrada.nextLine();
-        System.out.println(nome);
+        System.out.println("Qual o seu cargo?");
+        String cargo = scanner.nextLine();
+
+        System.out.println("Qual o período você estuda no SENAI?");
+        String periodo = scanner.nextLine();
+
+        scanner.close();
+
+        System.out.println(
+                "\nSuas informações:\n" +
+                        "Nome: " + nome + "\n" +
+                        "Idade: " + idade + " anos\n" +
+                        "Altura: " + altura + "\n" +
+                        "Cargo: " + cargo + "\n" +
+                        "Período: " + periodo
+        );
     }
-    
-
 }
