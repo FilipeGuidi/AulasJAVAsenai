@@ -24,8 +24,11 @@ public class MediaEscolar {
 
         if (media < 5){
             System.out.println("Reprovado!");
-        } else if (media <= 6,9) {
-            
+        } else if (media < 7) {
+            System.out.println("Em recuperação");
+        }else {
+            System.out.println("Aprovado!");
         }
+
     }
 }
