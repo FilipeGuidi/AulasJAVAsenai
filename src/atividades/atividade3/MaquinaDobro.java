@@ -7,14 +7,15 @@ public class MaquinaDobro {
         int resultado = numero * 2;
 
 
+        return resultado;
     }
     public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Digite um número que irá dobrar");
-        int numero = entrada.nextLine();
+        System.out.println("Digite um número que irá dobrar:");
+        int numero = entrada.nextInt();
 
-        System.out.println("O dobro do número é: " + numero);
+        System.out.println("O dobro do número é: " + numero * 2);
 
 
     }
