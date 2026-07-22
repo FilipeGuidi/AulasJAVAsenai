@@ -53,3 +53,5 @@ public class QuintaAula {
         }
 
         System.out.println(listaDeNomes);
+    }
+}
